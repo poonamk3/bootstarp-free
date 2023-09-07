@@ -14,3 +14,19 @@ phases:
 artifacts:
   files:
     - '**/*'
+    
+    
+    phases:
+  pre_build:
+    commands:
+      - echo Prebuild ops
+
+  build:
+    commands:
+      - echo Building the application 
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
